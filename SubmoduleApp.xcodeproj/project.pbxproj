@@ -14,6 +14,23 @@
 		04FC060724E4D8A000AC2705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FC060524E4D8A000AC2705 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		04FC061B24E4DC9F00AC2705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FC061524E4DC9E00AC2705 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		04FC061D24E4DC9F00AC2705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FC061524E4DC9E00AC2705 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		04FC05F924E4D89E00AC2705 /* SubmoduleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubmoduleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FC05FC24E4D89E00AC2705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +39,7 @@
 		04FC060324E4D8A000AC2705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FC060624E4D8A000AC2705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FC060824E4D8A000AC2705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FC061524E4DC9E00AC2705 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +58,7 @@
 			children = (
 				04FC05FB24E4D89E00AC2705 /* SubmoduleApp */,
 				04FC05FA24E4D89E00AC2705 /* Products */,
+				04FC061424E4DC9E00AC2705 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,23 @@
 				04FC060824E4D8A000AC2705 /* Info.plist */,
 			);
 			path = SubmoduleApp;
+			sourceTree = "<group>";
+		};
+		04FC061424E4DC9E00AC2705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04FC061524E4DC9E00AC2705 /* ResearchKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04FC061624E4DC9E00AC2705 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FC061C24E4DC9F00AC2705 /* ResearchKit.framework */,
+				04FC061E24E4DC9F00AC2705 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +146,35 @@
 			mainGroup = 04FC05F024E4D89E00AC2705;
 			productRefGroup = 04FC05FA24E4D89E00AC2705 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04FC061624E4DC9E00AC2705 /* Products */;
+					ProjectRef = 04FC061524E4DC9E00AC2705 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				04FC05F824E4D89E00AC2705 /* SubmoduleApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04FC061C24E4DC9F00AC2705 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 04FC061B24E4DC9F00AC2705 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		04FC061E24E4DC9F00AC2705 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 04FC061D24E4DC9F00AC2705 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		04FC05F724E4D89E00AC2705 /* Resources */ = {
